@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>user CRUD</title>
+    <link rel="stylesheet" href="css/user.css" />
+</head>
+
+<body>
+    <h1>Users CRUD</h1>
+    <h3>Add</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+        <input type="text" id="add-name" placeholder="New user">
+        <input type="text" id="add-password" placeholder="New password">
+        <input type="submit" value="Add">
+    </form>
+
+   
+
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>password</th>
+            <th></th>
+        </tr>
+        <tbody id="users"></tbody>
+    </table>
+<a href="./index.html">my glasses</a>
+    <script src="./js/User.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+       
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <h1>login</h1>
+    <label for="name">enter name</label>
+    <input type="text" name="name" id="name">
+    <label for="password">enter password</label>
+    <input type="text" name="password" id="password">
+    <button type="submit" id="submit">send</button>
+    <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=527151850613-cake67hkhqou3n3a47l4can5o19poj8u.apps.googleusercontent.com&redirect_uri=https://localhost:7172/login&scope=openid%20email&state=STATE_STRING">התחבר באמצעות גוגל</a>
+   
+    <button id="postmanButton">Open in Postman</button>
+
+    <script>
+        document.getElementById("postmanButton").addEventListener("click", function() {
+            // החלף את ה-URI למזהה האוסף שלך
+            const postmanURI = "postman://collection/40310174-3aac6243-1943-408a-aa86-f8368f4fc34d";
+            window.open(postmanURI, "_blank");
+        });
+    </script>
+    <script src="./js/login.js" asp-append-version="true"></script>
+
+</body>
+</html>
